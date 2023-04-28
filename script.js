@@ -55,6 +55,7 @@ function handleClick(event) {
   const cell = event.target;
 
   if(!cell.classList.contains('cell')) return;
+  if(cell.textContent !== "") return;
 
   if (event.target.textContent === "") {
     cell.textContent = currentPlayer;
